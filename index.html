@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Chourasia | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="#hero" class="nav-logo">Abhishek Chourasia</a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#publications" class="nav-link">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#certificates" class="nav-link">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <div
+              class="theme-toggle-button"
+              id="theme-toggle"
+              title="Toggle Theme"
+            >
+              <i data-feather="moon"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-content" data-aos="fade-in">
+          <h1>Abhishek Chourasia</h1>
+          <p class="subtitle">
+            B.Tech. Computer Science Student | AI/ML & Full Stack Development
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/abhishek291203"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i data-feather="linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/AbhishekChourasia29"
+              target="_blank"
+              aria-label="GitHub"
+              ><i data-feather="github"></i
+            ></a>
+            <a
+              href="https://x.com/Abhishek_291203"
+              target="_blank"
+              aria-label="Twitter"
+              ><i data-feather="twitter"></i
+            ></a>
+            <a
+              href="https://www.credly.com/users/abhishek-chourasia-291203"
+              target="_blank"
+              aria-label="Credly"
+              ><i data-feather="award"></i
+            ></a>
+          </div>
+          <a
+            href="Abhishek_Chourasia_Resume_Updated_Final.pdf"
+            class="btn-primary"
+            download="Abhishek_Chourasia_Resume.pdf"
+          >
+            <i data-feather="download"></i> Download CV
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-container">
+            <div class="about-image-container">
+              <img
+                src="img/abhi.jpg"
+                alt="Abhishek Chourasia"
+                class="profile-photo"
+                onerror="this.onerror=null; this.src='https://placehold.co/400x400/191924/A1A1A6?text=Abhishek';"
+              />
+            </div>
+            <div class="about-text-container">
+              <p class="about-text">
+                A B.Tech. Computer Science graduate from Medi-Caps University
+                (9.33 CGPA) specializing in Al, Machine Learning, and Full-Stack
+                Development. My experience is defined by engineering end-to-end
+                Al systems, from developing multi-agent chatbots (A-Prime.ai)
+                and agentic systems (SuperGPT) at Supersourcing to creating a
+                breast cancer detection tool (Web-BCD) under IBM's mentorship.
+                As a published researcher, my work includes an IEEE paper on the
+                "KrishiDisha" Al platform for agriculture and a Springer Nature
+                paper on student dropout analysis. I am proficient in Python,
+                LangChain, and Flask, with hands-on experience using FastAPI,
+                MongoDB, and Docker to build and deploy robust solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Experience & Education</h2>
+          <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>AI/ML Intern</h3>
+                <p class="timeline-company">Supersourcing</p>
+                <span class="timeline-date">July 2025 – Present</span>
+                <p>
+                  Enhanced the SuperGPT enterprise chatbot by engineering two
+                  new Al agents for role-based dashboard access and team
+                  performance queries. Architected and implemented a multi-agent
+                  framework using Langchain and Langraph. Contributed to the
+                  development of Al solutions for partner products, including
+                  data curation for getprojects.ai using PostgreSQL and
+                  foundational analysis for an e-learning chatbot.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>Machine Learning Research Intern</h3>
+                <p class="timeline-company">IBM - Global Remote Mentorship</p>
+                <span class="timeline-date">July 2024 – Dec 2024</span>
+                <p>
+                  Developed Web-BCD, a breast cancer detection system using the
+                  Wisconsin dataset, achieving high accuracy. Engineered an ML
+                  model with Python (Pandas, Numpy, Scikit-learn) and a
+                  Sequential Neural Network. Deployed the model using Flask and
+                  integrated it with an interactive HTML/CSS/JavaScript
+                  interface.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>B.Tech in Computer Science</h3>
+                <p class="timeline-company">Medi-Caps University, Indore</p>
+                <span class="timeline-date">August 2023 – May 2025</span>
+                <p>CGPA: 9.33 / 10.0</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>B.Sc in Computer Science (AIML)</h3>
+                <p class="timeline-company">Medi-Caps University, Indore</p>
+                <span class="timeline-date">June 2021 – July 2023</span>
+                <p>CGPA: 8.88 / 10.0</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>12th MPBSE</h3>
+                <p class="timeline-company">
+                  Karnataka Vidya Niketan School, Indore
+                </p>
+                <span class="timeline-date">2021</span>
+                <p>Percentage: 86.2%</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+              <div class="timeline-content">
+                <h3>10th MPBSE</h3>
+                <p class="timeline-company">
+                  Karnataka Vidya Niketan School, Indore
+                </p>
+                <span class="timeline-date">2019</span>
+                <p>Percentage: 85.4%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+              <div class="project-video-container">
+                <video width="100%" loop muted playsinline controls>
+                  <source src="videos/A-Prime.ai.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3>A-Prime.Al Multi-Agent Chatbot Platform</h3>
+              <p>
+                A multi-agent chatbot platform using Python with a robust
+                FastAPI backend. Engineered an intelligent routing system to
+                delegate tasks to specialized agents for web search, image
+                generation, code creation, and Q&A. Integrated Tavily, Stability
+                Al, and Groq APIs.
+              </p>
+              <div class="project-skills">
+                <span>Python</span><span>FastAPI</span><span>LangChain</span
+                ><span>MongoDB</span><span>LLM</span>
+              </div>
+              <a
+                href="https://github.com/AbhishekChourasia29/A-Prime.AI"
+                target="_blank"
+                class="project-link"
+                >View on GitHub <i data-feather="arrow-right"></i
+              ></a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-video-container">
+                <video width="100%" loop muted playsinline controls>
+                  <source src="videos/KrishiDisha.ai.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3>Krishi Disha Al-driven Crop Optimization</h3>
+              <p>
+                Integrated crop/fertilizer recommendations, disease detection,
+                and yield prediction using ML models (Random Forest, CNN).
+                Developed an Al-powered chatbot for instant, personalized
+                agricultural guidance and implemented multilingual support.
+              </p>
+              <div class="project-skills">
+                <span>Flask</span><span>Deep Learning</span><span>Python</span
+                ><span>Machine Learning</span>
+              </div>
+              <a
+                href="https://github.com/AbhishekChourasia29/KrishiDisha.ai"
+                target="_blank"
+                class="project-link"
+                >View on GitHub <i data-feather="arrow-right"></i
+              ></a>
+            </div>
+            <!-- Project 2: Vision Forage -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="project-video-container">
+                <video width="100%" loop muted playsinline controls>
+                  <source src="videos/Vision_Forage.ai.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3>Vision_Forage.ai: AI Image Search Engine</h3>
+              <p>
+                An intelligent search engine that allows users to find images
+                using either text descriptions or by uploading another image.
+                Leverages deep learning for advanced visual and semantic
+                understanding.
+              </p>
+              <div class="project-skills">
+                <span>Python</span><span>Flask</span><span>CNN</span
+                ><span>Computer Vision</span>
+              </div>
+              <a
+                href="https://github.com/AbhishekChourasia29/Vision_Forage.ai"
+                target="_blank"
+                class="project-link"
+                >View on GitHub <i data-feather="arrow-right"></i
+              ></a>
+            </div>
+            <!-- Project 3: Fake News Guard -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="project-video-container">
+                <video width="100%" loop muted playsinline controls>
+                  <source
+                    src="videos/Fake_News_Guard.ai.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <h3>Fake_News_Guard.ai: NLP-Based Detector</h3>
+              <p>
+                A web application that analyzes news articles to determine their
+                authenticity. Utilizes Natural Language Processing and Machine
+                Learning models to classify content as real or fake with high
+                accuracy.
+              </p>
+              <div class="project-skills">
+                <span>Python</span><span>Flask</span><span>NLP</span
+                ><span>Scikit-learn</span>
+              </div>
+              <a
+                href="https://github.com/AbhishekChourasia29/Fake_News_Gaurd.ai"
+                target="_blank"
+                class="project-link"
+                >View on GitHub <i data-feather="arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Publications</h2>
+          <div class="publications-grid">
+            <div class="publication-card" data-aos="fade-up">
+              <img
+                src="img/publication certificate for KrishiDIsha.png"
+                alt="KrishiDisha Publication Certificate"
+                class="publication-image"
+              />
+              <div class="publication-content">
+                <h3>
+                  KrishiDisha: Revolutionizing Agriculture with Intelligent
+                  Recommendations...
+                </h3>
+                <p class="publication-meta">
+                  Paper presented at and accepted for the
+                  <strong
+                    >IEEE International Conference on Engineering Innovations
+                    and Technologies (ICoEIT-2025)</strong
+                  >.
+                </p>
+                <p>
+                  This paper introduces an intelligent agricultural platform
+                  that assists farmers with crop selection, disease detection,
+                  and yield prediction using advanced AI models.
+                </p>
+              </div>
+            </div>
+            <div
+              class="publication-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img
+                src="img/publication certificate for Student Dropout.jpeg"
+                alt="Student Dropout Publication Certificate"
+                class="publication-image"
+              />
+              <div class="publication-content">
+                <h3>
+                  A Review on Understanding the Patterns of Student Dropout
+                </h3>
+                <p class="publication-meta">
+                  Published in <strong>Springer Nature Singapore</strong> |
+                  Presented at WCSC 2024.
+                </p>
+                <p>
+                  This research analyzes demographic and academic data to
+                  identify key factors influencing dropout rates, achieving high
+                  predictive accuracy with an ANN model.
+                </p>
+                <p class="publication-meta">
+                  DOI:
+                  <a
+                    href="https://doi.org/10.1007/978-981-97-9006-7_20"
+                    target="_blank"
+                    >10.1007/978-981-97-9006-7_20</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Key Expertise</h2>
+          <div class="skills-container">
+            <div class="skill-icon" data-aos="zoom-in">
+              <img src="img/c.png" alt="C Icon" /><span>C</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="50">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                alt="C++ Icon"
+              /><span>C++</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="100">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                alt="Java Icon"
+              /><span>Java</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="150">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                alt="Python Icon"
+              /><span>Python</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="200">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="HTML5 Icon"
+              /><span>HTML</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="250">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                alt="CSS3 Icon"
+              /><span>CSS</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript Icon"
+              /><span>JavaScript</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="350">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
+                alt="R Icon"
+              /><span>R</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="400">
+              <img src="img/flask.png" alt="Flask Icon" /><span>Flask</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="450">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                alt="MySQL Icon"
+              /><span>MySQL</span>
+            </div>
+            <div class="skill-icon" data-aos="zoom-in" data-aos-delay="500">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+                alt="TensorFlow Icon"
+              /><span>TensorFlow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Certifications & Achievements</h2>
+          <p class="certificates-intro">
+            A collection of my key certifications and competition achievements,
+            including an elite certificate in "Python for Data Science" from
+            NPTEL and specialized training from IBM, Cisco, and Celonis.
+          </p>
+          <div class="certificate-carousel-container">
+            <button class="carousel-nav-btn prev-btn" aria-label="Previous Certificate"><i data-feather="chevron-left"></i></button>
+            <div id="certificate-carousel" class="certificate-carousel"></div>
+            <button class="carousel-nav-btn next-btn" aria-label="Next Certificate"><i data-feather="chevron-right"></i></button>
+          </div>
+          </div>
+      </section>
+
+      <section id="contact" class="content-section">
+        <div class="container" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="contact-text">
+            I'm currently seeking new opportunities and am open to
+            collaborations. Feel free to reach out if you have a project in mind
+            or just want to connect!
+          </p>
+          <div class="contact-form-container">
+            <h3>Connect with me</h3>
+            <p>
+              Feel free to send me an email. I'll get back to you as soon as
+              possible.
+            </p>
+
+            <div class="form-group">
+              <label for="recipient">Recipient</label>
+              <input
+                type="text"
+                id="recipient"
+                value="abhishekchourasia29122003@gmail.com"
+                readonly
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                placeholder="Enter the subject of your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="6"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <a
+              id="send-email-btn"
+              class="btn-primary"
+              href="mailto:en23cs3t1013@medicaps.ac.in"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-mail"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Send Email
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p>&copy; 2025 Abhishek Chourasia. All Rights Reserved.</p>
+      <p>Built with ❤️ in Indore, India.</p>
+    </footer>
+
+    <div id="certificate-modal" class="modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modal-image" />
+    </div>
+
+    <div id="chatbot-container">
+      <div id="chatbot-icon">
+        <i data-feather="message-square"></i>
+      </div>
+      <div id="chatbot-window" class="hidden">
+        <div class="chatbot-header">
+          <h3>AI Assistant</h3>
+          <button id="close-chatbot" aria-label="Close Chat">&times;</button>
+        </div>
+        <div id="chatbot-messages">
+          <div class="chat-message bot">
+            Hi there! Ask me anything about Abhishek's profile.
+          </div>
+        </div>
+        <form id="chatbot-form">
+          <input
+            type="text"
+            id="chatbot-input"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <button type="submit" id="chatbot-send" aria-label="Send Message">
+            <i data-feather="send"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
