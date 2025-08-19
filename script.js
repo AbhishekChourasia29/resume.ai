@@ -208,7 +208,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const updateMailtoLink = () => {
             const subject = encodeURIComponent(subjectInput.value);
             const message = encodeURIComponent(messageTextarea.value);
-            mailtoLink.href = `mailto:${recipient}?subject=${subject}&body=${message}`;
+            // This is the updated line for Gmail
+            mailtoLink.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${message}`;
         };
 
         subjectInput.addEventListener('input', updateMailtoLink);
