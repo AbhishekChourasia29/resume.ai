@@ -358,3 +358,77 @@ body.light-mode .btn-primary:hover, body.light-mode .btn-primary:active { transf
         animation: none;
     }
 }
+
+/* ====================================================== */
+/* ============== NEW CODE STARTS HERE ================== */
+/* ====================================================== */
+
+/* --- Typed.js Animation Cursor Styling --- */
+.hero-content .typed-cursor {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    color: var(--text-primary);
+    opacity: 1;
+    animation: typed-blink 0.7s infinite;
+}
+
+@keyframes typed-blink {
+    50% { opacity: 0.0; }
+}
+body.light-mode .hero-content .typed-cursor {
+    color: var(--text-primary);
+}
+
+.hero-content .subtitle {
+    min-height: 1.7em; /* Reserves space for one line of text */
+}
+
+/* --- Scroll to Top Button Styling (FIXED) --- */
+.scroll-top-btn {
+    position: fixed;
+    /* ADJUSTED: Moved up to avoid overlapping the chatbot icon */
+    bottom: 100px; 
+    right: -80px; /* Start off-screen */
+    width: 50px;
+    height: 50px;
+    background: var(--accent-gradient);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease, right 0.5s ease;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    right: 30px; /* Slide in */
+}
+
+.scroll-top-btn:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 6px 20px var(--shadow-color);
+}
+
+.scroll-top-btn i {
+    color: white;
+    width: 28px;
+    height: 28px;
+}
+
+/* Adjust scroll-to-top button position to not overlap chatbot icon on mobile */
+@media (max-width: 480px) {
+    .scroll-top-btn {
+        bottom: 100px;
+        right: -80px;
+        width: 45px;
+        height: 45px;
+    }
+    .scroll-top-btn.visible {
+       right: 20px;
+    }
+}
