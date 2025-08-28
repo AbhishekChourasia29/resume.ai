@@ -357,4 +357,71 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 500);
         });
     }
+    if (document.getElementById('typed-text')) {
+        new Typed('#typed-text', {
+            strings: [
+                'B.Tech. Computer Science Student',
+                'AI &amp; ML Engineer',
+                'Full Stack Developer',
+                'Published Researcher'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            startDelay: 500,
+            loop: true
+        });
+    }
+
+    // --- Enhanced Smooth Scrolling with Header Offset ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            
+            // Special case for the logo/home link to just go to the top
+            if (targetId === '#hero') {
+                 window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+                 // Close mobile menu if open
+                if (hamburger && navMenu && navMenu.classList.contains("active")) {
+                    hamburger.classList.remove("active");
+                    navMenu.classList.remove("active");
+                    document.body.style.overflow = "auto";
+                }
+                return;
+            }
+
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                const headerOffset = document.querySelector('.main-header').offsetHeight;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+
+    // --- Scroll to Top Button Logic ---
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        
+        feather.replace();
+    }
 });
