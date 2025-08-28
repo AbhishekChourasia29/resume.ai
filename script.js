@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "certificate4.png", "certificate5.png", "certificate6.png",
         "certificate7.png", "certificate8.png", "certificate9.png",
         "certificate10.png", "certificate11.png", "certificate12.png",
-        "certificate13.png", "certificate14.png", "certificate15.png",
-        "certificate16.png"
+        "certificate13.png"
     ];
 
     const carousel = document.getElementById('certificate-carousel');
